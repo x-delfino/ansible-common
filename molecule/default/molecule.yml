@@ -4,31 +4,31 @@ driver:
 
 platforms:
   - name: debian_latest
-    image: debian:latest
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-debian_latest:latest
+    pre_build_image: true
   - name: debian_bookworm
-    image: debian:bookworm
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-debian_bookworm:latest
+    pre_build_image: true
   - name: debian_bullseye
-    image: debian:bullseye
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-debian_bullseye:latest
+    pre_build_image: true
 
   - name: ubuntu_latest
-    image: ubuntu:latest
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-ubuntu_latest:latest
+    pre_build_image: true
   - name: ubuntu_focal
-    image: ubuntu:focal
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-ubuntu_focal:latest
+    pre_build_image: true
   - name: ubuntu_jammy
-    image: ubuntu:jammy
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-ubuntu_jammy:latest
+    pre_build_image: true
   - name: ubuntu_noble
-    image: ubuntu:noble
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-ubuntu_noble:latest
+    pre_build_image: true
 
   - name: kali_rolling
-    image: kalilinux/kali-rolling:latest
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-kali_rolling:latest
+    pre_build_image: true
   - name: kali_release
-    image: kalilinux/kali-last-release:latest
-    dockerfile: ../../automation/Dockerfile.j2
+    image: ghcr.io/x-delfino/molecule-kali_release:latest
+    pre_build_image: true
