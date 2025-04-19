@@ -1,0 +1,26 @@
+---
+namespace: x_delfino
+name: common
+version: 0.0.1
+description: a collection of common ansible tasks and modules
+tags: ['linux']
+authors:
+ - delfino
+
+readme: README.md
+license:
+ - Apache-2.0
+license_file: ''
+
+repository: https://github.com/x-delfino/ansible-common
+documentation: https://github.com/x-delfino/ansible-common
+homepage: https://github.com/x-delfino/ansible-common
+issues: https://github.com/x-delfino/ansible-common/issues
+
+build_ignore:
+ - '*.ansible'
+ - .gitignore
+ - build
+ - molecule
+ - automation
+ - Taskfile.yml

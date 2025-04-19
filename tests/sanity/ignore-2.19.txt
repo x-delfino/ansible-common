@@ -1,0 +1,2 @@
+plugins/modules/github_latest.py validate-modules:missing-gplv3-license
+plugins/modules/env_path.py validate-modules:missing-gplv3-license

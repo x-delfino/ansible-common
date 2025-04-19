@@ -1,0 +1,34 @@
+---
+driver:
+  name: docker
+
+platforms:
+  - name: debian_latest
+    image: debian:latest
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: debian_bookworm
+    image: debian:bookworm
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: debian_bullseye
+    image: debian:bullseye
+    dockerfile: ../../automation/Dockerfile.j2
+
+  - name: ubuntu_latest
+    image: ubuntu:latest
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: ubuntu_focal
+    image: ubuntu:focal
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: ubuntu_jammy
+    image: ubuntu:jammy
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: ubuntu_noble
+    image: ubuntu:noble
+    dockerfile: ../../automation/Dockerfile.j2
+
+  - name: kali_rolling
+    image: kalilinux/kali-rolling:latest
+    dockerfile: ../../automation/Dockerfile.j2
+  - name: kali_release
+    image: kalilinux/kali-last-release:latest
+    dockerfile: ../../automation/Dockerfile.j2

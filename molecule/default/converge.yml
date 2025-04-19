@@ -1,0 +1,32 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: Get ansible latest release
+      x_delfino.common.github_latest:
+        repo: ansible/ansible
+      register: __github_latest
+      environment:
+        GITHUB_TOKEN: >-
+          {{
+            lookup('env', 'GITHUB_TOKEN')
+            if lookup('env', 'GITHUB_TOKEN') | length > 0
+          }}
+
+    - name: Assert response
+      ansible.builtin.assert:
+        that:
+          - __github_latest.latest_version is defined
+
+    - name: Add to "~/.local/test" to path
+      x_delfino.common.env_path:
+        path: ~/.local/test
+
+    - name: Ensure path added
+      ansible.builtin.lineinfile:
+        dest: /root/.profile
+        line: >-
+          [ -d "~/.local/test" ] && export PATH="~/.local/test:$PATH"
+      check_mode: true
+      register: __env_path_check
+      failed_when: __env_path_check.changed
