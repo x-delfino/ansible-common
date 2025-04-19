@@ -8,3 +8,6 @@ name: PR Checks
 jobs:
   call-ci:
     uses: x-delfino/ansible-ci/.github/workflows/collection.yml@main
+    with:
+      namespace: x_delfino
+      collection: common
