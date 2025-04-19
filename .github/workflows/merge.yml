@@ -1,8 +1,8 @@
 ---
-name: PR Checks
+name: Build on Main
 
 'on':
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
@@ -11,3 +11,4 @@ jobs:
     with:
       namespace: x_delfino
       collection: common
+      run_build: true
