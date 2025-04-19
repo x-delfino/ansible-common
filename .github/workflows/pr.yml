@@ -1,0 +1,10 @@
+---
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  call-ci:
+    uses: x-delfino/ansible-ci/.github/workflows/collection.yml@main
