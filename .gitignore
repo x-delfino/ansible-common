@@ -1,3 +1,5 @@
 .ansible/
 build/
 output/
+roles/*/README.md
+roles/*/defaults/main.yml

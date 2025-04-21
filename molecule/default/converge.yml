@@ -2,6 +2,26 @@
 - name: Converge
   hosts: all
   tasks:
+    - name: Install curl role
+      ansible.builtin.include_role:
+        name: x_delfino.common.curl
+
+    - name: Install git role
+      ansible.builtin.include_role:
+        name: x_delfino.common.git
+
+    - name: Install unzip role
+      ansible.builtin.include_role:
+        name: x_delfino.common.unzip
+
+    - name: Install wget role
+      ansible.builtin.include_role:
+        name: x_delfino.common.wget
+
+    - name: Install zip role
+      ansible.builtin.include_role:
+        name: x_delfino.common.zip
+
     - name: Get ansible latest release
       x_delfino.common.github_latest:
         repo: ansible/ansible
