@@ -12,5 +12,7 @@ jobs:
     with:
       run_build: true
       run_publish: true
+    permissions:
+      contents: write
     secrets:
       ANSIBLE_GALAXY_TOKEN: ${{ secrets.ANSIBLE_GALAXY_TOKEN }}
