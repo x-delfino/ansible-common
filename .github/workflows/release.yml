@@ -1,0 +1,16 @@
+---
+name: Release Ansible Collection
+
+'on':
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    uses: x-delfino/ansible-ci/.github/workflows/collection.yml@main
+    with:
+      run_build: true
+      run_publish: true
+    secrets:
+      ANSIBLE_GALAXY_TOKEN: ${{ secrets.ANSIBLE_GALAXY_TOKEN }}
