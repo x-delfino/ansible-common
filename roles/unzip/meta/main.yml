@@ -1,0 +1,27 @@
+---
+galaxy_info:
+  author: delfino
+  role_name: unzip
+  description: List, test and extract compressed files in a ZIP archive
+
+  license: Apache-2.0
+
+  min_ansible_version: '2.1'
+
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+    - name: Kali
+      versions:
+        - all
+
+  galaxy_tags: []
+
+dependencies: []

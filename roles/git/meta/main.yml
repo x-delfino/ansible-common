@@ -1,0 +1,30 @@
+---
+galaxy_info:
+  author: delfino
+  role_name: git
+  description: >-
+    Git is a free and open source distributed version control system
+    designed to handle everything from small to very large projects
+    with speed and efficiency.
+
+  license: Apache-2.0
+
+  min_ansible_version: '2.1'
+
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+    - name: Kali
+      versions:
+        - all
+
+  galaxy_tags: []
+
+dependencies: []

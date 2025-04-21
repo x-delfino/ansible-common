@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  author: delfino
+  role_name: curl
+  description: >-
+    curl is a tool for transferring data from or to a server using URLs.
+
+  license: Apache-2.0
+
+  min_ansible_version: '2.1'
+
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+    - name: Kali
+      versions:
+        - all
+
+  galaxy_tags: []
+
+dependencies: []
