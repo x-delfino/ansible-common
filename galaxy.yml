@@ -1,7 +1,7 @@
 ---
 namespace: x_delfino
 name: common
-version: 0.0.2
+version: 0.0.3
 description: a collection of common ansible tasks, roles and modules
 tags: ['linux']
 authors:
