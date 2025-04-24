@@ -1,5 +1,7 @@
 # Ansible Collection - Common
 
+[![x\_delfino.common](https://img.shields.io/ansible/collection/v/x_delfino/common)](https://galaxy.ansible.com/x_delfino/common)
+
 Ansible collection containing common modules and roles for reuse within other collections.
 
 ## Modules
